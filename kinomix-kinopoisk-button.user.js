@@ -39,28 +39,32 @@
             background: #f0f0f0 !important;
             border: 1px solid #e0e0e0 !important;
             cursor: pointer !important;
-            transition: all 0.25s ease !important;
+            transition: background 0.25s ease, transform 0.2s ease !important;
             box-shadow: 0 2px 6px rgba(0,0,0,0.15) !important;
+            color: #1f1f1f !important;           /* ← важно для currentColor */
         `;
 
+        // SVG с currentColor
         btn.innerHTML = `
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
-                <path fill="#1f1f1f" d="m10 16.5l6-4.5l-6-4.5zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="transition: transform 0.25s ease;">
+                <path fill="currentColor" d="m10 16.5l6-4.5l-6-4.5zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8"/>
             </svg>
         `;
 
         const svg = btn.querySelector('svg');
-        const path = btn.querySelector('path');
 
+        // Hover через JS (самый стабильный способ на Кинопоиске)
         btn.onmouseenter = () => {
             btn.style.background = '#e0e0e0';
-            path.setAttribute('fill', '#ff5500');
+            btn.style.color = '#ff5500';
+            btn.style.transform = 'scale(1.08)';
             svg.style.transform = 'scale(1.12)';
         };
 
         btn.onmouseleave = () => {
             btn.style.background = '#f0f0f0';
-            path.setAttribute('fill', '#1f1f1f');
+            btn.style.color = '#1f1f1f';
+            btn.style.transform = 'scale(1)';
             svg.style.transform = 'scale(1)';
         };
 
@@ -72,7 +76,7 @@
         };
 
         container.appendChild(btn);
-        console.log(`[Kinomix] Кнопка добавлена для ID ${filmId}`);
+        console.log(`[Kinomix 6.1] Кнопка добавлена для ID ${filmId}`);
     }
 
     function init() {
@@ -89,7 +93,6 @@
 
     init();
 
-    // Поддержка SPA навигации
     let lastUrl = location.href;
     new MutationObserver(() => {
         if (location.href !== lastUrl) {
