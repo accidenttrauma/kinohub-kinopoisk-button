@@ -16,7 +16,8 @@
 
 ### Скриншот
 
-![Скриншот кнопки](preview.png)
+<img width="1154" height="637" alt="preview" src="https://github.com/user-attachments/assets/d5d83729-2ccf-4ca3-92e6-45a692bb5b4e" />
+
 
 ### Лицензия
 
