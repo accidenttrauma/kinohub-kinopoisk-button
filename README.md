@@ -10,11 +10,11 @@
 
 1. Установи расширение **[Violentmonkey](https://violentmonkey.github.io)** / **[Tampermonkey](https://www.tampermonkey.net)** в свой браузер
 
-2. Нажми сюда → **[Установить скрипт](https://raw.githubusercontent.com/accidenttrauma/kinomix-kinopoisk-button/refs/heads/main/kinomix-kinopoisk-button.user.js)**
+2. Нажми сюда → **[Установить скрипт](https://raw.githubusercontent.com/accidenttrauma/kinobox-kinopoisk-button/refs/heads/main/kinobox-kinopoisk-button.user.js)**
 
 Или добавь вручную
 
-**[Версия](https://raw.githubusercontent.com/accidenttrauma/kinomix-kinopoisk-button/refs/heads/main/kinomix-kinopoisk-floating-button.user.js)** с плавующей кнопкой слева если возникнут проблемы с интерфейсом (или вам так больше нравится)
+**[Версия](https://raw.githubusercontent.com/accidenttrauma/kinombox-kinopoisk-button/refs/heads/main/kinomix-kinopoisk-floating-button.user.js)** с плавующей кнопкой слева если возникнут проблемы с интерфейсом (или вам так больше нравится)
 
 ### Скриншот
 
