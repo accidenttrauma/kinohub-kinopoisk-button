@@ -8,9 +8,9 @@
 
 ### 🚀 Установка
 
-Установи **[Violentmonkey](https://violentmonkey.github.io)** / **[Tampermonkey](https://www.tampermonkey.net)**.
+1. Установи расширение **[Violentmonkey](https://violentmonkey.github.io)** / **[Tampermonkey](https://www.tampermonkey.net)**. в свой браузер
 
-Нажми сюда → **[Установить скрипт](https://raw.githubusercontent.com/accidenttrauma/kinohub-kinopoisk-button/refs/heads/main/kinomix-kinopoisk-button.user.js)**
+2. Нажми сюда → **[Установить скрипт](https://raw.githubusercontent.com/accidenttrauma/kinohub-kinopoisk-button/refs/heads/main/kinomix-kinopoisk-button.user.js)**
 
 **[Версия](https://raw.githubusercontent.com/accidenttrauma/kinohub-kinopoisk-button/refs/heads/main/kinomix-kinopoisk-floating-button.user.js)** с плавующей кнопкой слева если возникнут проблемы с интерфейсом
 
