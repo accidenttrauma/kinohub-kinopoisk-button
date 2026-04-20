@@ -71,7 +71,7 @@
 
         btn.onclick = (e) => {
             e.stopImmediatePropagation();
-            window.open(`https://kinomix.web.app/film/${filmId}/`, '_blank');
+            window.open(`https://kinobox.in/movie/${filmId}/`, '_blank');
         };
 
         container.appendChild(btn);
